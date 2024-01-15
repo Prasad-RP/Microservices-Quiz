@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.microservices.quiz.entity.QuestionMaster;
 
-@FeignClient(url = "http://localhost:9092/api/v1/question", value = "Question-Client")
+//@FeignClient(url = "http://localhost:9092/api/v1/question", value = "Question-Client")
+@FeignClient(name = "QUESTION-SERVICE")
 public interface QuestionClient {
 
-	@GetMapping("/quiz/{quizId}")
+//	@GetMapping("/quiz/{quizId}")
+//	List<QuestionMaster> getQuestionsOfQuiz(@PathVariable Integer quizId);
+
+	@GetMapping("/api/v1/question/quiz/{quizId}")
 	List<QuestionMaster> getQuestionsOfQuiz(@PathVariable Integer quizId);
 }
