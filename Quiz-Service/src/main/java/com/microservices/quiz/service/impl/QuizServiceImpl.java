@@ -40,11 +40,20 @@ public class QuizServiceImpl implements QuizService {
 
 	@Override
 	public List<QuizMaster> getAll() {
-		List<QuizMaster> quizs = quizRepository.findAll();
-		quizs.forEach(p -> {
+		List<QuizMaster> quizes = quizRepository.findAll();
+		quizes.forEach(p -> {
 			p.setQuestionMasters(client.getQuestionsOfQuiz(p.getQuizId()));
 		});
-		return quizs;
+		return quizes;
+	}
+
+	@Override
+	public List<QuizMaster> getByUserId(Integer userId) {
+		List<QuizMaster> quizes = quizRepository.findByUserId(userId);
+		quizes.forEach(p -> {
+			p.setQuestionMasters(client.getQuestionsOfQuiz(p.getQuizId()));
+		});
+		return quizes;
 	}
 
 }

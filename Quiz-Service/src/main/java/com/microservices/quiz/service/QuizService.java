@@ -18,4 +18,6 @@ public interface QuizService {
 
 	List<QuizMaster> getAll();
 
+	List<QuizMaster> getByUserId(Integer userId);
+
 }

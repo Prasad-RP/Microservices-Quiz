@@ -1,4 +1,4 @@
-package com.microservices.quiz.entity;
+package com.microservices.user.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -20,20 +20,20 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "quiz_master")
-public class QuizMaster implements Serializable{
+@Table(name = "user_master")
+public class UserMaster implements Serializable {
 
-	private static final long serialVersionUID = -4561372119150013373L;
+	private static final long serialVersionUID = 3659386975119829637L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "quiz_id")
-	private Integer quizId;
-
-	private String title;
-	
+	@Column(name = "user_id")
 	private Integer userId;
 
-	private transient List<QuestionMaster> questionMasters = new ArrayList<>();
+	private String name;
+
+	private String email;
+
+	private transient List<QuizMaster> quizMasters = new ArrayList<>();;
 
 }

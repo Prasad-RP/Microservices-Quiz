@@ -1,4 +1,4 @@
-package com.microservices.quiz.entity;
+package com.microservices.user.entity;
 
 import java.io.Serializable;
 
@@ -9,14 +9,13 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class QuestionMaster implements Serializable{
+@AllArgsConstructor
+public class QuestionMaster implements Serializable {
 
-	private static final long serialVersionUID = -2914140171341472757L;
+	private static final long serialVersionUID = -7384904045774030335L;
 
 	private Integer questionId;
 
 	private String question;
-
 }
