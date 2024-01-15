@@ -21,7 +21,7 @@ Find the source code for each service and infrastructure component on our GitHub
 1. [User Service](https://github.com/Prasad-RP/Microservices-Quiz/tree/master/user-services)
 2. [Question Service](https://github.com/Prasad-RP/Microservices-Quiz/tree/master/Question-Service)
 3. [Quiz Service](https://github.com/Prasad-RP/Microservices-Quiz/tree/master/Quiz-Service)
-4. [Service Registry](https://github.com/Prasad-RP/Microservices-Quiz/tree/master/service-registry)
+4. [Service Registry](https://github.com/Prasad-RP/Microservices-Quiz/tree/master/Service-Registry)
 5. [API Gateway](https://github.com/Prasad-RP/Microservices-Quiz/tree/master/Api-Gateway)
 
 
